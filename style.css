@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* ========================== Base================================= */
+
+body,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: sans-serif;
+}
+
+/* ============================ mobile devices============================ */
+
+html {
+  font-size: 62.5%;
+}
+
+/* navigation bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.6rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+.nav-bar .logo {
+  font-weight: 500;
+  color: #cf2656;
+}
+.nav-bar .nav-list {
+  display: flex;
+}
+.nav-bar .nav-list > li a {
+  margin: 1rem;
+}
+.nav-bar img.hamburger {
+  display: none;
+}
+
+/* hero */
+.home-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+}
+.home-hero .hero-data {
+  font-size: 3rem;
+  flex: 1 1 40rem;
+  padding: 2rem;
+}
+.home-hero .hero-data p {
+  font-size: 1.8rem;
+  margin: 2rem auto;
+  line-height: 1.7;
+  color: #8f8a8a;
+}
+.home-hero .hero-data .button {
+  max-width: max-content;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.home-hero .hero-data .button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.home-hero .img {
+  flex: 1 1 40rem;
+}
+
+/* =================== Sharing Is The Best Gift ==================== */
+.padding-gift {
+  /* padding: 0 2rem 5rem 2rem; */
+  padding: 2rem;
+}
+
+/* ==================Christmas Decorations====================== */
+.card-wraper h2 {
+  font-size: 3.7rem;
+  text-align: center;
+  padding: 2rem;
+}
+.card-wraper .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card-wraper .card-same {
+  margin: 1rem;
+  width: 25rem;
+  box-shadow: 0 2px 6px rgb(65 11 16 / 15%);
+  border-radius: 1rem;
+}
+.card-wraper .card-same h3 {
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  line-height: 1.7;
+}
+.card-wraper .card-same .shop-btn {
+  color: #da2535;
+  cursor: pointer;
+  width: max-content;
+  margin: 0 auto;
+}
+
+/* ===================== Accessories ====================================== */
+.accessories p {
+  width: max-content;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #8f8a8a;
+}
+/* =====================send a gift=============================  */
+.send-gift {
+  background-color: whitesmoke;
+  width: 90%;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+}
+.send-gift .input-button {
+  border: 1px solid black;
+  display: flex;
+  width: max-content;
+  padding: 0.5rem 0.6rem;
+}
+.send-gift .input-button input {
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+}
+.send-gift .input-button .btn {
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.6rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  margin-left: 0.4rem;
+}
+.send-gift .input-button .btn:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+/* =====================footer===================================== */
+.footer-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-wraper .footer-same-card {
+  flex-basis: 20rem;
+  margin: 2rem;
+  line-height: 2;
+}
+.footer-wraper .footer-same-card h3 {
+  font-size: 2rem;
+}
+.footer-wraper .footer-same-card p,
+.footer-wraper .footer-same-card li a {
+  font-size: 2rem;
+  color: #8f8a8a;
+}
+.footer-wraper .footer-same-card ul.social {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.footer-wraper .footer-same-card ul > li > i {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+/* =============================== medium devices ========================= */
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+
+  /* navigation bar */
+  .nav-bar .nav-list {
+    display: none;
+  }
+  .nav-bar img.hamburger {
+    display: flex;
+  }
+
+  /* home */
+  .home-hero {
+    flex-direction: column-reverse;
+  }
+  .home-hero .hero-data {
+    flex: 0;
+    padding: 2rem 2rem 0 2rem;
+  }
+  .home-hero .img {
+    flex: 0;
+  }
+
+  /* card */
+  .card-wraper .card-same {
+    width: 30rem;
+  }
+
+  /* footer */
+  .footer-wraper .footer-same-card {
+    flex-basis: 30rem;
+  }
+}
+
+/* =============================== small devices ========================= */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+
+  /* card */
+  .card-wraper .card-same {
+    width: 50rem;
+    margin: 2rem;
+  }
+
+  /* footer */
+  .footer-wraper {
+    justify-content: flex-start;
+  }
+  .footer-wraper .footer-same-card {
+    flex-basis: 35rem;
+    margin: 2rem 3rem;
+  }
+}
